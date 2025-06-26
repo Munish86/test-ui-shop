@@ -1,0 +1,95 @@
+.checkout-design {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading styles */
+.checkout-design h2,
+.checkout-design h3 {
+  background: linear-gradient(to bottom, #2dd4bf, #a7f3d0);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+}
+
+/* Form styling */
+.checkout-design form {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease;
+}
+
+.checkout-design input,
+.checkout-design textarea {
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.checkout-design input:focus,
+.checkout-design textarea:focus {
+  border-color: #2dd4bf;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(45, 212, 191, 0.3);
+}
+
+/* Button Styling */
+.checkout-design button {
+  background: linear-gradient(to right, #2dd4bf, #a7f3d0);
+  border: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.checkout-design button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(45, 212, 191, 0.3);
+}
+
+/* Order Summary box */
+.checkout-design .order-summary {
+  background-color: #f9fafb;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  animation: fadeSlideUp 0.5s ease;
+}
+
+.checkout-design .order-summary p,
+.checkout-design .order-summary span {
+  color: #374151; /* gray-700 */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.mt-2.bg-blue-600.text-white.px-4.py-2.rounded.hover\:bg-blue-700 {
+	background: linear-gradient(45deg, #fb7185 0%, #fb7185 100%);
+	color: #f9fafb;
+	font-weight: bold;
+}

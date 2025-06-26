@@ -1,5 +1,7 @@
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
+import '../styles/Cart.css';
+
 export default function Cart() {
   const { cart, removeFromCart, updateQty } = useCart();
 
@@ -13,14 +15,14 @@ export default function Cart() {
         <p>No items in cart.</p>
       ) : (
         <>
-          <table className="w-full border">
+          <table className="w-full border cart-design">
             <thead className="bg-gray-100">
               <tr>
-                <th className="p-2 text-left">Product</th>
-                <th className="p-2">Price</th>
-                <th className="p-2">Qty</th>
-                <th className="p-2">Subtotal</th>
-                <th className="p-2">Remove</th>
+                <th className="p-2 cart-design text-left">Product</th>
+                <th className="p-2 cart-design">Price</th>
+                <th className="p-2 cart-design">Qty</th>
+                <th className="p-2 cart-design">Subtotal</th>
+                <th className="p-2 cart-design">Remove</th>
               </tr>
             </thead>
             <tbody>

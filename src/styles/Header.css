@@ -1,0 +1,37 @@
+/* Add this to bottom of Header.css */
+
+.nav-item {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #fb7185;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #fb7185;
+  transition: width 0.3s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+.bg-pink-500 {
+	background-color: #fb7185;
+}
+.bg-white.shadow-md.px-4.py-3.flex.justify-between.items-center.sticky.top-0.z-50 {
+	background: #81e9cb;
+	border-radius: 13px;
+	margin: 12px 12px 0px 12px;
+}
