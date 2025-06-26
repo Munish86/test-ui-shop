@@ -10,3 +10,15 @@
 .bg-blue-600 {
 	background-color: #81e9cb !important;
 }
+@media(max-width:1024px) {
+	.filter-design {
+	width: 25%;
+
+}
+}
+@media(max-width:767px) {
+	.filter-design {
+	width: 100%;
+
+}
+}

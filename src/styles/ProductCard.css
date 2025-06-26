@@ -90,6 +90,15 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+@media(max-width:1024px) {
+	.filter-design {
+	width: 100%;
+	
+}
+.grid-cols-2 {
+	grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+}
 /* Responsive design */
 @media (max-width: 768px) {
   .product-grid {
@@ -113,4 +122,11 @@
     font-size: 0.85rem;
     padding: 0.5rem 1.2rem;
   }
+  .product-grid {
+	max-width: 100%;
+	padding: 1rem;
+}
+.grid-cols-2 {
+	grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
 }

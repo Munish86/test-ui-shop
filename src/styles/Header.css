@@ -1,167 +1,37 @@
-/* Header.css */
-header {
-  background: linear-gradient(90deg, #2dd4bf 0%, #a7f3d0 100%); /* Lighter teal-to-mint gradient */
-  padding: 0.75rem 1.5rem;
-  margin: 1rem 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(8px);
-}
+/* Add this to bottom of Header.css */
 
-.text-blue-200 {
-	color: #000;
-	font-size: 21px;
-}
-
-header a:first-child:hover {
-	color: black;
-	transform: translateY(-1px);
-	text-shadow: 0 0 11px white;
-}
-
-/* Nav menu */
-nav {
-  display: flex;
-  gap: 1.25rem;
-  align-items: center;
-}
-
-nav a {
-  font-size: 0.8rem; /* Reduced from 0.85rem, same for all nav items including Home */
-  font-weight: bold;
+.nav-item {
+  font-size: 0.875rem;
+  font-weight: 600;
   color: #1e293b;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
   position: relative;
-  transition: color 0.2s ease;
+  transition: 0.3s ease;
 }
 
-nav a:hover {
+.nav-item:hover {
   color: #fb7185;
 }
 
-nav a::after {
-  content: '';
+.nav-item::after {
+  content: "";
   position: absolute;
-  width: 0;
-  height: 1.5px;
-  bottom: -3px;
   left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
   background-color: #fb7185;
-  transition: width 0.2s ease;
+  transition: width 0.3s;
 }
 
-nav a:hover::after {
+.nav-item:hover::after {
   width: 100%;
 }
-
-/* Active link style */
-nav a.active {
-  color: #fb7185;
-  font-weight: 600;
+.bg-pink-500 {
+	background-color: #fb7185;
 }
-
-nav a.active::after {
-  width: 100%;
-  background-color: #fb7185;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 0.75rem;
-  }
-
-  nav {
-    flex-direction: row;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  header a:first-child {
-    font-size: 1.1rem; /* Reduced from 1.3rem for mobile */
-  }
-
-  nav a {
-    font-size: 0.75rem; /* Reduced from 0.8rem, same for all nav items */
-  }
-}
-/* SearchBar.css */
-.search-container {
-  display: flex;
-  align-items: center;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  background: linear-gradient(145deg, #ffffff, #f1f5f9);
-  width: 100%;
-  max-width: 260px; /* Smaller size for a compact look */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  font-family: 'Inter', sans-serif;
-}
-
-.search-container:hover {
-  border-color: #f43f5e; /* Coral accent for vibrancy */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.search-input {
-  border: none;
-  padding: 8px 12px; /* Reduced padding for smaller size */
-  outline: none;
-  flex: 1;
-  background: transparent;
-  font-size: 0.85rem; /* Smaller font size for a sleek look */
-  color: #1e293b;
-  transition: color 0.3s ease;
-}
-
-.search-input::placeholder {
-  color: #64748b;
-  opacity: 0.8;
-}
-
-.search-button {
-  background: linear-gradient(45deg, #fb7185, #fb7185); /* Navy-to-blue gradient */
-  color: #ffffff;
-  padding: 8px 14px; /* Reduced padding for compactness */
-  border: none;
-  border-radius: 0 12px 12px 0;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.search-button:hover {
-  background: linear-gradient(45deg, #fb7185, #fb7185);
-  transform: translateY(-1px);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .search-container {
-    max-width: 220px; /* Even smaller for mobile */
-    margin-top: 0.75rem;
-  }
-
-  .search-input {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-  }
-
-  .search-button {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
+.bg-white.shadow-md.px-4.py-3.flex.justify-between.items-center.sticky.top-0.z-50 {
+	background: #81e9cb;
+	border-radius: 13px;
+	margin: 12px 12px 0px 12px;
 }
