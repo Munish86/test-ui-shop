@@ -89,7 +89,7 @@
   }
 }
 .mt-2.bg-blue-600.text-white.px-4.py-2.rounded.hover\:bg-blue-700 {
-	background: linear-gradient(45deg, #b0c5ff 0%, #24b294 100%);
-	color: black;
+	background: linear-gradient(45deg, #fb7185 0%, #fb7185 100%);
+	color: #f9fafb;
 	font-weight: bold;
 }
