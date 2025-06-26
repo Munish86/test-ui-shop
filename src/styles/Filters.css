@@ -1,0 +1,12 @@
+.filter-design {
+	width: 17%;
+}
+.filter-category {
+	text-transform: capitalize;
+}
+.bg-blue-500 {
+	background-color: #83eacb !important;
+}
+.bg-blue-600 {
+	background-color: #81e9cb !important;
+}

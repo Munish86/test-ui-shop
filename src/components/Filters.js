@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import ReactSlider from "react-slider";
+import '../styles/Filters.css';
+
 
 const categories = [
   "men's clothing",
@@ -34,9 +36,9 @@ export default function FiltersSidebar({ onFilter, onSort }) {
   };
 
   return (
-    <div className="space-y-6 w-full md:w-64">
+    <div className="space-y-6 filter-design w-full md:w-64">
       {/* Box 1: Category Filter */}
-      <div className="bg-white p-4 shadow rounded-xl">
+      <div className="bg-white filter-category p-4 shadow rounded-xl">
         <h3 className="font-bold text-lg mb-2">Category</h3>
         {categories.map((cat) => (
           <label key={cat} className="block mb-1 text-sm">

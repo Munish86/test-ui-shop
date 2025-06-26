@@ -1,9 +1,12 @@
+import '../styles/SortDropdown.css';
+
+
 export default function SortDropdown({ onSort }) {
   return (
     <div className="flex justify-end mb-4">
       <select
         onChange={(e) => onSort(e.target.value)}
-        className="border rounded px-3 py-2"
+        className="border sort-Design rounded px-3 py-2"
       >
         <option value="">Sort By</option>
         <option value="price-asc">Price: Low to High</option>

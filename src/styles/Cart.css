@@ -1,0 +1,56 @@
+.cart-design {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Heading row with vertical gradient */
+.cart-design th {
+  background: linear-gradient(to bottom, #2dd4bf 0%, #a7f3d0 100%);
+  font-weight: 600;
+  color: #1f2937; /* gray-800 */
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 16px;
+}
+
+/* Round top corners */
+.cart-design thead th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.cart-design thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+/* Body cells */
+.cart-design td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3f4f6; /* gray-100 */
+  text-align: center;
+  color: #4b5563; /* gray-600 */
+  font-size: 15px;
+}
+
+/* Row hover effect */
+.cart-design tr:hover {
+  background-color: #f9fafb;
+  transition: background 0.2s ease;
+}
+
+/* Quantity input style */
+.cart-design input[type="number"] {
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 4px;
+  padding: 4px 8px;
+  outline: none;
+  width: 60px;
+}
+
+.cart-design input[type="number"]:focus {
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
